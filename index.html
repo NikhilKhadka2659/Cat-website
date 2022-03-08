@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cat Photos App</title>
+    </head>
+    <body>
+        <style>
+        .green-text { color: green}
+        .red-text {color: red;font-size: 50px;}
+        .blue-text {color: blue;}
+        h2{font-size: 10px;}
+
+        </style>
+        <h2 class="blue-text">Cat Photo App </h2>
+        <main>
+            <h3>Cat Photos</h3>
+
+            <!-- Todo: Add link to cat photos-->
+            <p class="red-text">Click here to view more <a href="#" target="balnk" class="green-text">Cat photos</a></p>
+           
+            <a href="#" target="balnk"><img src="https://media.istockphoto.com/photos/kitten-at-home-garden-wall-picture-id1273661469?b=1&k=20&m=1273661469&s=170667a&w=0&h=K-b-88J89oSBIwbD0WhhDoOvybcbjfePJoOHS0grHHA=" alt="A cute brown cat."></a>
+            <h3>Cat lists</h3>
+            <div class="lists">
+                <p>Things cats <em>Love:</em></p>
+                <ul>
+                    <li> cat nip</li>
+                    <li>laser pointers</li>
+                    <li>lasagna</li>
+                </ul>
+                <img src="lasagna.jpg" alt="Lasagna">
+                <p class="red-text">Things cat <strong>hate:</strong></p>
+                <ol>
+                    <li>Flea treatment</li>
+                    <li>thunder</li>
+                    <li>Other cats </li>
+                </ol>
+            </div>
+            <img src="Cats.jpg" alt="Cat">
+            <form action="/submit-cat-photo">
+                <label for="indoor"><input id="indoor" type="radio"name="indoor-outdoor"> Indoor</label><br>
+                <label><input id="outdoor" type="radio"name="indoor-outdoor" checked> Outdoor</label><br>
+
+
+                <label for="loving"><input id="loving" type="checkbox" name="personality"> Loving</label><br>
+                <label for="lazy"><input id="lazy" type="checkbox" name="personality"> Lazy</label><br>
+                <label for="sexy"><input id="sexy" type="checkbox" name="personality" checked> Sexy</label><br>
+                
+                <input type="text" placeholder="Cat photo URL" required><br>
+                
+                
+                <button type="submit">Submit</button>
+                
+
+                
+
+            </form>
+
+        </main>
+        <footer>
+            <p><small> No copyright-<a href="https://facebook.com">facebook.com</a></small></p>
+        </footer>
+        
+    </body>
+</html>
